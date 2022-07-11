@@ -4,7 +4,7 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: black;
+  /* background-color: black; */
 }
 
 /* Header */
@@ -13,7 +13,153 @@
 
 /* selection #2 */
 
+.back__video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+video {
+  display: block;
+  min-width: 110vw;
+  min-height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  object-fit: contain;
+}
+
+.play {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+} 
+ body{
+ 
+  height: 100vh;
+  background: #1d3254;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.container{
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  /* margin-top: 190vw; */
+}
+
+.card-profile{
+  background: #14223A;
+  color:white;
+  margin: 20px;
+  
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.card-profile:hover{
+  transform: scale(1.05);
+}
+ 
+.card-profile > img{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  object-fit: cover;
+  object-position: 100 50;
+  width: 300px;
+  height: 250px;
+}
+
+.card-profile .info{
+  margin: 0px;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info h3{
+  margin-bottom: 5px;
+}
+
+.info p{
+  color: #888;
+  margin-bottom: 30px;
+}
+
+.info span{
+  color: #888;
+  line-height:5px;
+  font-size: 13px;
+}
+
+img.logo{
+  margin-top: 18px;
+  object-fit:scale-down;
+  height: 25px;
+  object-position: 0;  
+}
+
+.addmore{
+  background: #1d3254;
+  color: #aaa;
+  height: 410px;
+  width: 300px;
+  border: 3px solid #111e33;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.1s ease-in;
+}
+
+.addmore i{
+  font-size: 40px;
+  margin: 10px;
+}
+
+div.addmore:hover{
+  transform: scale(1.05);
+}
+
+@media(max-width:1000px){
+  body{
+    align-items: start;
+  }
+  .container{
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
 /* selection #3 */
+
+/* selection#4 */
 
 /* Footer */
 .obs {
