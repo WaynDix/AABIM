@@ -4,7 +4,7 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: black;
+  /* background-color: black; */
 }
 
 /* Header */
@@ -16,11 +16,61 @@
 /* selection #3 */
 
 /* Footer */
+.bimbo {
+  background-color: black;
+  padding-bottom: 150px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+  background-color: black;
+}
+.slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+
+.slide h3 {
+  position: absolute;
+  font-size: 24px;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+.slide.active {
+  flex: 10;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+/* selection #2 */
+
+/* selection#4 */
+
+/* selection #3 */
+
+/* Footer */
 .obs {
   display: flex;
   justify-content: space-around;
-  margin-top: 256px;
+  margin-top: 0px;
   padding-bottom: 118px;
+  background-color: black;
 }
 
 /* left */
